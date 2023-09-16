@@ -1,0 +1,21 @@
+.main_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.main_button a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border: 1px solid #020615;
+    background-color: #020615;
+    border-radius: 30px;
+}
+
+.main_button a:hover {
+    color: #020615;
+    background-color: #d3dde3;
+    transition: 0.3s;
+}

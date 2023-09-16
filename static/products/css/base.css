@@ -1,12 +1,14 @@
 body {
     margin: 0;
     font-family: Roboto;
+    color:red;
+    background-image: url('../images/main.webp');
+    background-size: cover;
 }
 
 header {
-    background: #040624;
+    background: #020615;
     width: 100%;
-    position: fixed;
     text-align: center;
 }
 
@@ -36,6 +38,6 @@ header {
 }
 
 .nav a:hover {
-    color: black;
+    color: #6B6969;
     transition: 0.3s;
 }
