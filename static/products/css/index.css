@@ -1,3 +1,8 @@
+body {
+    background-image: url('../images/main.webp');
+    background-size: cover;
+}
+
 .main_button {
     display: flex;
     justify-content: center;

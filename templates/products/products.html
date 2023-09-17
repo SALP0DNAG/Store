@@ -1,4 +1,35 @@
 {% extends 'products/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
 {% block title %}
     Products
 {% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="categories-and-goods">
+            <div class="categories" style="border-top: 1px solid black; border-radius: 2px">
+                {% for category in categories %}
+                    <a href="#">{{ category.name }}</a>
+                {% endfor %}
+            </div>
+            <div class="goods">
+                {% for product in products %}
+                    <div class="product">
+                        <img src="/media/{{ product.image }}" alt="">
+                        <div class="text-in-product">
+                            <div class="name">{{ product.name }}</div>
+                            <div class="price">{{ product.price }} руб</div>
+                            <div class="short-description">{{ product.short_description }}</div>
+                        </div>
+                        <div class="block-button">
+                            <button class="button" type="button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock%}

@@ -1,9 +1,7 @@
 body {
     margin: 0;
     font-family: Roboto;
-    color:red;
-    background-image: url('../images/main.webp');
-    background-size: cover;
+    background-color: #d3dde3;
 }
 
 header {
