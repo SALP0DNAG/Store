@@ -1,0 +1,21 @@
+.profile-and-basket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile img {
+    height: 100px;
+    width: 100px;
+    border: medium double rgba(152, 152, 152, .5);
+    display: block;
+    margin: auto;
+}
+
+.first-and-last-name {
+    margin-top: 5px;
+    display: flex;
+}
+
+.first-and-last-name div{
+    margin-right: 7px;
+}

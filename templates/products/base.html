@@ -16,13 +16,15 @@
         <div class="container">
             <div class="header-line">
                 <div class="logo">
-                    <a href="{% url 'index' %}">
+                    <a href="{% url 'products:index' %}">
                         GeneralStore
                     </a>
                 </div>
 
                 <div class="nav">
-                    <a href="{% url 'products' %}">Каталог</a>
+                    <a href="{% url 'products:products' %}">Каталог</a>
+                    <a href="{% url 'users:login' %}">Войти</a>
+                    <a href="{% url 'products:profile' %}">Рейма М.</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,29 @@
+{% extends 'products/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'products/css/profile.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="profile-and-basket">
+            <div class="profile">
+                <div class="title">Профиль</div>
+                <img src="{% static 'products/images/avatar.jpg'%}" alt="#">
+                <div class="first-and-last-name">
+                    <div class="first_name">
+                        <div class="label">Имя</div>
+                        <input type="text">
+                    </div>
+                    <div class="last_name">
+                        <div class="label">Фамилия</div>
+                        <input type="text">
+                    </div>
+                </div>
+                <input type="image">
+            </div>
+            <div class="basket">
+                Корзина
+            </div>
+        </div>
+    </div>
+{% endblock %}
