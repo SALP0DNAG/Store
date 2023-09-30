@@ -14,5 +14,3 @@ def products(request):
     return render(request, 'products/products.html', context)
 
 
-def profile(request):
-    return render(request, 'products/profile.html')
