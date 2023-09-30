@@ -51,3 +51,8 @@ def profile(request):
         'form': form,
     }
     return render(request, 'products/profile.html', context=context)
+
+
+def logout(request):
+    auth.logout(request)
+    return HttpResponseRedirect(reverse('products:index'))
