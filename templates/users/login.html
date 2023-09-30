@@ -9,9 +9,15 @@
 </head>
 <body>
     <div class="container">
-        {% if form.errors %}
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                {{ form.non_field_errors }}
+        {% if messages or form.errors %}
+            <div class="alert {% if messages %} alert-success {% else %} alert-warning {% endif %} alert-dismissible fade show" role="alert">
+                {% if messages %}
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                {% else %}
+                    {{ form.non_field_errors }}
+                {% endif %}
             </div>
         {% endif %}
         <div class="main">
