@@ -12,6 +12,7 @@
     <div class="container">
         <div class="categories-and-goods">
             <div class="categories" style="border-top: 1px solid black; border-radius: 2px">
+                <a href="{% url 'products:products' %}">Все товары</a>
                 {% for category in categories %}
                     <a href="{% url 'products:category' category.id %}">{{ category.name }}</a>
                 {% endfor %}
