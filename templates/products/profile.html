@@ -45,28 +45,7 @@
                     <button type="submit" class="button-save">Сохранить</button>
                 </form>
             </div>
-            <div class="basket">
-                <div class="title-and-quantity-goods">
-                    <div class="title">Корзина</div>
-                    <div class="quantity-goods">3</div>
-                </div>
-                <div class="product">
-                    <div class="product-name-description">
-                        <div class="product-name">Product name</div>
-                        <div class="product-description">Product description</div>
-                    </div>
-                    <div class="quantity-price-delete">
-                        <div class="quantity">1</div>
-                        <div class="price">2 490 руб.</div>
-                        <button class="button-delete btn-danger" type="submit">Удалить</button>
-                    </div>
-                    <div class="block-finally-price">
-                        <div class="itogo">Итого</div>
-                        <div class="finally-price">2 490 руб.</div>
-                    </div>
-                   <button type="button" class="btn btn-success" type="submit">Оформить</button>
-                </div>
-            </div>
+            {% include 'products/basket.html' %}
         </div>
     </div>
 {% endblock %}

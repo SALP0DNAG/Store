@@ -130,7 +130,11 @@
     border-radius: 0 0 3px 3px;
     border: 1px solid rgba(152, 152, 152, .5);
     border-top: 0;
-    padding: 10px 0 20px 12px;
+    padding: 10px 10px 20px 12px;
+}
+
+.quantity-price-delete button{
+    width: 40px;
 }
 
 .quantity {
@@ -140,11 +144,6 @@
     border-radius: 3px;
 }
 
-.button-delete {
-    margin-right: 50px;
-    border: none;
-    border-radius: 5px;
-}
 
 .price {
     padding-top: 7px;
@@ -165,7 +164,8 @@
     font-weight: 600;
 }
 
-.btn-success {
+.btn-formalize {
     margin-top: 15px;
+    margin-bottom: 50px;
     float: right;
 }

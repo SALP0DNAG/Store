@@ -1,0 +1,36 @@
+{% if baskets %}
+    <div class="basket">
+    <div class="title-and-quantity-goods">
+        <div class="title">Корзина</div>
+        <div class="quantity-goods"> {{ total_quantity }}</div>
+    </div>
+    <div class="product">
+        {% for basket in baskets %}
+            <div class="product-name-description">
+                <div class="product-name">{{ basket.product.name }}</div>
+                <div class="product-description">{{ basket.product.short_description }}</div>
+            </div>
+            <div class="quantity-price-delete">
+                <div class="quantity">{{ basket.quantity }} шт.</div>
+                <div class="price">{{ basket.sum }} руб.</div>
+                <div class="buttons-add-delete">
+                    <a href="{% url 'products:basket_delete' basket.id %}">
+                        <button class="btn btn-danger" type="submit"> - </button>
+                    </a>
+                    <a href="{% url 'products:basket_add' basket.product.id %}">
+                        <button class="btn btn-success" type="submit"> + </button>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+        <div class="block-finally-price">
+            <div class="itogo">Итого</div>
+            <div class="finally-price">{{ total_sum }} руб.</div>
+        </div>
+       <button type="button" class="btn btn-success btn-formalize" type="submit">Оформить</button>
+    </div>
+</div>
+{% else %}
+    <div class="title">Корзина пуста</div>
+{% endif %}
+

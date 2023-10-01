@@ -25,7 +25,9 @@
                             <div class="short-description">{{ product.short_description }}</div>
                         </div>
                         <div class="block-button">
-                            <button class="button" type="button">Добавить в корзину</button>
+                            <a href="{% url 'products:basket_add' product.id %}">
+                                <button class="button" type="button">Добавить в корзину</button>
+                            </a>
                         </div>
                     </div>
                 {% endfor %}
